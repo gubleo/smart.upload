@@ -77,17 +77,10 @@
                         </center>
                     <br>
 
-                    <span style="z-index: 999">Link Gerado: <a onclick="copiarTexto()" id="caminho" style="color: dodgerblue">Ainda nenhum caminho foi especificado.</a></span>
+                    <span>Link Gerado: <a id="caminho" style="color: dodgerblue">Ainda nenhum caminho foi especificado.</a></span>
                     </div>
 
-                    <script>
-                        function copiarTexto() {
-                            var textoCopiado = document.getElementById("caminho");
-                            textoCopiado.select();
-                            document.execCommand("Copy");
-                            alert("Texto Copiado: " + textoCopiado.value);
-                        }
-                    </script>
+
 
                 </div>
             </div>
