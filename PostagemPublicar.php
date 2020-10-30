@@ -1,6 +1,6 @@
 <?php
 	
-	$DestinationDirectory	= 'upload/'; //Qual pasta os arquivos deverão ir
+	$DestinationDirectory	= 'comunicados/'; //Qual pasta os arquivos deverão ir
 	
 	$categoria  = $_POST['categoria'];
 

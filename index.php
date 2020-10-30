@@ -7,9 +7,9 @@
     <title>Smart Upload | Upload de Arquivos</title>
 
     <link rel="icon" href=" " type="image/x-icon">
-    <script type="text/javascript" src="../upload/js/material.js"></script>
-    <link rel="stylesheet" type="text/css" href="../upload/css/mdl-style.css">
-    <link rel="stylesheet" type="text/css" href="../upload/css/material.css">
+    <script type="text/javascript" src="js/material.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/mdl-style.css">
+    <link rel="stylesheet" type="text/css" href="css/material.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -127,7 +127,7 @@
                 //retorno de tudo que veio do arquivo PostagemPublicar
                 alert("Upload feito com sucesso. Link: "+json.foto);
 
-                  document.getElementById('caminho').innerText = 'http://localhost/upload/upload/' +json.foto;
+                  document.getElementById('caminho').innerText = 'http://anima.craos.net/smart.interact/ws/comunicados/' +json.foto;
 
                 //Limpa o campo de postagem
                 document.getElementById("postagem").value = "";
