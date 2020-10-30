@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 </head>
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-500 mdl-base">
-<form action="PostagemPublicar.php" method="post" id="upload">
+<form action="upload.php" method="post" id="upload">
 
 <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
     <main class="mdl-layout__content">
@@ -125,12 +125,11 @@
               var json = JSON.parse(xhr.responseText);
               alert(json.status);
               if (!json.error && json.status === 'ok') {
-                //retorno de tudo que veio do arquivo PostagemPublicar
+
                 alert("Upload feito com sucesso. Link: "+json.foto);
 
                   document.getElementById('caminho').innerText = 'http://anima.craos.net/smart.interact/ws/comunicados/' +json.foto;
 
-                //Limpa o campo de postagem
                 document.getElementById("postagem").value = "";
               } else {
                 $preview.innerHTML = 'Arquivo não enviado';
