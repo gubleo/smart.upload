@@ -7,9 +7,9 @@
     <title>Smart Upload | Upload de Arquivos</title>
 
     <link rel="icon" href=" " type="image/x-icon">
-    <script type="text/javascript" src="js/material.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/mdl-style.css">
-    <link rel="stylesheet" type="text/css" href="css/material.css">
+    <script type="text/javascript" src="../upload/js/material.js"></script>
+    <link rel="stylesheet" type="text/css" href="../upload/css/mdl-style.css">
+    <link rel="stylesheet" type="text/css" href="../upload/css/material.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -36,7 +36,7 @@
 
         <div class="demo-blog__posts mdl-grid animated fadeIn">
 
-            <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop mdl-shadow--2dp">
+            <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop mdl-shadow--2dp" style="border-bottom: solid 3px darkorange">
                 <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
                     <div>
                         <strong>Informações</strong>
@@ -60,7 +60,7 @@
                 </div>
             </div>
 
-            <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--8-col-desktop mdl-shadow--2dp">
+            <div class="mdl-card something-else mdl-cell mdl-cell--8-col mdl-cell--8-col-desktop mdl-shadow--2dp" style="border-bottom: solid 3px deepskyblue">
                 <div class="mdl-card__supporting-text meta meta--fill mdl-color-text--grey-600">
                     <div>
                         <strong>Envio de arquivos</strong>
@@ -72,7 +72,9 @@
 
 
                     <div style="margin-top: 10px; padding-top: 10px;">
-                    <div id="preview" style="color: greenyellow"></div>
+                        <center>
+                    <div id="preview"></div>
+                        </center>
                     <br>
 
                     <span style="z-index: 999">Link Gerado: <a onclick="copiarTexto()" id="caminho" style="color: dodgerblue">Ainda nenhum caminho foi especificado.</a></span>
@@ -98,10 +100,10 @@
                 <div class="section-spacer"></div>
                 <a href="#" class="demo-nav__button mdl-color-text--grey-600" id="continuar">
                     Fazer Upload dos Arquivos
-                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-shadow--2dp mdl-color--cyan" value="Publicar">
+                    <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-shadow--2dp mdl-color--cyan" value="Publicar" >
                         <i class="material-icons mdl-color-text--white" role="presentation">cloud_upload</i>
                     </button>
-                </a>
+                </input>
             </nav>
 
         </div>
@@ -130,9 +132,7 @@
               alert(json.status);
               if (!json.error && json.status === 'ok') {
                 //retorno de tudo que veio do arquivo PostagemPublicar
-                alert("Categoria retornada "+json.categoria);
-                alert("Postagem retornada "+json.postagem);
-                alert("Link da foto retornada "+json.foto);
+                alert("Upload feito com sucesso. Link: "+json.foto);
 
                   document.getElementById('caminho').innerText = 'http://localhost/upload/upload/' +json.foto;
 
