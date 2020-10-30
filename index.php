@@ -69,6 +69,7 @@
                 <div class="mdl-card__media mdl-color--white mdl-color-text--grey-600 font animated fadeIn">
 
                     <input type="file" name="file" id="file" accept="*"/>
+                    <span>Upload apenas de um arquivo por vez.</span>
 
 
                     <div style="margin-top: 10px; padding-top: 10px;">
