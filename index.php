@@ -86,8 +86,6 @@
                 </div>
             </div>
 
-
-
             <!-- Botão Continuar-->
 
             <nav class="demo-nav mdl-cell mdl-cell--12-col animated fadeIn">
@@ -124,9 +122,9 @@
             if (xhr.readyState === 4 && xhr.status == 200) {
               var json = JSON.parse(xhr.responseText);
               alert(json.status);
-              if (!json.error && json.status === 'ok') {
+              if (!json.error && json.status === 'Arquivo enviado com sucesso.') {
 
-                alert("Upload feito com sucesso. Link: "+json.foto);
+                alert("Upload feito com sucesso. Link: http://anima.craos.net/smart.interact/ws/comunicados/"+json.foto);
 
                   document.getElementById('caminho').innerText = 'http://anima.craos.net/smart.interact/ws/comunicados/' +json.foto;
 
@@ -149,6 +147,5 @@
           }, false);
         }, false);
     </script>
-
 </body>
 </html>
