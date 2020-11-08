@@ -125,9 +125,7 @@
               if (!json.error && json.status === 'Arquivo enviado com sucesso.') {
 
                 alert("Upload feito com sucesso. Link: http://anima.craos.net/smart.interact/ws/comunicados/"+json.foto);
-
                   document.getElementById('caminho').innerText = 'http://anima.craos.net/smart.interact/ws/comunicados/' +json.foto;
-
                 document.getElementById("postagem").value = "";
               } else {
                 $preview.innerHTML = 'Arquivo não enviado';
