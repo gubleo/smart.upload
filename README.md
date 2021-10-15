@@ -1,3 +1,5 @@
+![smartupload](https://user-images.githubusercontent.com/43252092/137534454-b198c1ce-1093-48a3-965b-1af6c814f5f8.png)
+
 # Sistema para Upload de Arquivos
 
 Aplicação desenvolvida para envio de arquivos para local específico.
